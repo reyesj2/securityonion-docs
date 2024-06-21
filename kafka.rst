@@ -70,6 +70,9 @@ For more information, please see https://kafka.apache.org/documentation/#brokerc
 
 Enabling Kafka
 ~~~~~~~~~~~~~~
+.. warning::
+    | Before enabling Kafka note that Kafka is not a supported output for Elastic Agents using the Elastic Defend integration.
+    | For more information, please see: https://www.elastic.co/guide/en/fleet/8.10/kafka-output-settings.html
 Once you have the appropriate configuration in place, you can enable Kafka by navigating to :ref:`administration` --> Configuration --> global --> pipeline and setting the value to KAFKA.
 
 There is no need to click on the ``SYNCHRONIZE GRID``. Once you have set the global pipeline value to KAFKA, the changes will begin to take affect in the background before finally switching the grid to the new pipeline.
